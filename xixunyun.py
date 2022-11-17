@@ -21,7 +21,7 @@ data = {
 headers = {'Content-Type': 'application/json'}
 
 response = requests.post(url='http://xxy.kuileii.com/release/xixunyun', headers=headers, data=json.dumps(data))
-print(response.json()["data"])
+
 
 SCKEY=os.environ["SCKEY"]
 if len(SCKEY) >= 1:
